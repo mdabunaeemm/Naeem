@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    position: fixed;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    background-color: white;
+    box-shadow: 1px 1px 5px 1px;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    
+
+}
+.navbar-nav ul{
+    display: flex;
+}
+.hireMe a{
+    color: white;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 5px;
+    text-transform:uppercase;
+    margin: 0 20px;
+    box-shadow: 0px 0px 2px 2px black;
+}
+.navbar-nav ul li a{
+    padding: 5px;
+    color: black;
+    font-weight: 500;
+}
+.navbar-nav ul li a:hover{
+    background-color: purple;
+    color: white;
+}
+.navbar-toggler{
+    display: none;
+    border: none;
+    outline: none;
+    color: black;
+    background-color: white;
+}
+
+
+.brand-button{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-brand{
+    font-size: 36px;
+    margin-left: 100px;
+    font-weight: 600;
+    color: #000;
+}
+.navbar-brand:hover{
+    color: white;
+    background-color: purple;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    nav{
+        flex-direction: column;
+      justify-content:space-between;
+    }
+    .navbar-brand{
+        font-size: 36px;
+        margin-left: 10px;
+        font-weight: 600;
+    }
+    .navbar-toggler{
+        display: block;
+        font-size: 30px;
+        font-weight:10;
+    }
+    .navbar-nav ul{
+        
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .collapse{
+        display: none;
+    }
+    .navbar-nav ul li{
+        padding: 10px 0;
+    }
+    .hireMe{
+        margin: 20px -10px;
+    }
+
+}
